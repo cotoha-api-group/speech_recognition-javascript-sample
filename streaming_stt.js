@@ -198,7 +198,8 @@ function speech_recognition(){
                                             var audio_source = audio_context.createMediaStreamSource(stream);
                                             audio_source.connect(audio_processor);
                                             audio_processor.onaudioprocess = onAudioProcess;
-                                            audio_processor.connect(audio_context.destination);                                            condition.innerHTML = "音声認識中(マイク入力)";
+                                            audio_processor.connect(audio_context.destination);
+                                            condition.innerHTML = "音声認識中(マイク入力)";
                                             able_button(stop_button);
                                             able_button(cancel_button);
                                             result_list.appendChild(start_line);
